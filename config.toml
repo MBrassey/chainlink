@@ -1,0 +1,17 @@
+Log.Level = 'info'
+
+[WebServer]
+HTTPPort = 6688
+SecureCookies = true
+AllowOrigins = 'https://chainlink.brassey.io'
+
+[WebServer.TLS]
+HTTPSPort = 0
+
+[[EVM]]
+ChainID = '1'
+
+[[EVM.Nodes]]
+Name = 'primary'
+WSURL = 'wss://ethapi01.brassey.io'
+HTTPURL = 'https://ethapi01.brassey.io'
