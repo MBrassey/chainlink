@@ -94,6 +94,6 @@ sudo journalctl -u chainlink -f    # View logs
 
 - Script is idempotent where possible (checks existing installations)
 - Builds Chainlink from source (takes several minutes)
-- Database password is URL-encoded in `secrets.toml` (%2F = /, %3D = =)
+- Database password is URL-encoded in `secrets.toml`
 - Admin credentials are randomly generated on each run
 - Service runs as unprivileged `chainlink` user with restricted permissions
