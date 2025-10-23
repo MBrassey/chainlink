@@ -7,7 +7,7 @@ Automated installation script for running a Chainlink node on Ubuntu/Debian syst
 - `setup.sh` - Main installation script (requires `.env` file)
 - `config.toml` - Chainlink node configuration
 - `secrets.toml` - Database credentials and keystore password
-- `.env` - Environment variables for the setup script (not included)
+- `.env` - Environment variables for the setup script (env.example)
 
 ## What It Does
 
@@ -58,7 +58,7 @@ chainlink.brassey.io {
 ```
 
 **Requirements for HTTPS**:
-- DNS A record: `chainlink.brassey.io` → your server IP
+- DNS A record: `chainlink.brassey.io` → server IP
 - Open ports: 80 (HTTP challenge), 443 (HTTPS)
 - Valid email for Let's Encrypt notifications
 
